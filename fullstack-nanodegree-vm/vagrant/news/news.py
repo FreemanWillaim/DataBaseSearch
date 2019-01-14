@@ -43,4 +43,7 @@ sql2 = 'select au.name, count(*) from log join articles\
 log.status=\'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count\
 (date(time)))::numeric)*100),2) > 1;'
 
+# Calls the fileOpen method to open the file NewsResults.txt for appending and
+# creates an object.  Which is then stored in the variable file.
+
 file = fileOpen()
