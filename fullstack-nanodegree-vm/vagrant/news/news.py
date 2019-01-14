@@ -68,4 +68,8 @@ results = searchData(curr, sql1, header1, header2)
 
 file = fileOpen()
 
+# Calls the searchData method and passes in a cursor, curr, an sql
+# statement,  sql2, and two headers, header3 and header2. Then
+# recieves the result of the query.
+
 results = searchData(curr, sql2, header3, header2)
