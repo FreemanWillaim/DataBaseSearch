@@ -53,4 +53,6 @@ file = fileOpen()
 
 conn = connect()
 
+# creates a cursor object to search the database.
+
 curr = conn.cursor()
