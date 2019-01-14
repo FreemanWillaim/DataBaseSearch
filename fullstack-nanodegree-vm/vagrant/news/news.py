@@ -56,3 +56,5 @@ conn = connect()
 # creates a cursor object to search the database.
 
 curr = conn.cursor()
+
+searchData(curr, sql1, header1, header2)
