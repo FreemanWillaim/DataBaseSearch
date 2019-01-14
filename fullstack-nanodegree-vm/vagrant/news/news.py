@@ -73,3 +73,5 @@ file = fileOpen()
 # recieves the result of the query.
 
 results = searchData(curr, sql2, header3, header2)
+
+file = fileOpen()
