@@ -57,4 +57,4 @@ conn = connect()
 
 curr = conn.cursor()
 
-searchData(curr, sql1, header1, header2)
+results = searchData(curr, sql1, header1, header2)
