@@ -22,3 +22,7 @@ header5 = 'Percentage of Errors'
 sql1 = 'select a.title, count(*) as count from log join \
 articles a on substring(path,10)=slug group by title \
 order by count desc limit 3'
+
+sql2 = 'select au.name, count(*) from log join articles\
+ a on substring(path,10)=slug join authors au on au.id \
+ = a.author group by name order by count desc'
