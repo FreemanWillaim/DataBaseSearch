@@ -84,3 +84,5 @@ file = fileOpen()
 # recieves the result of the query.
 
 result = searchData(curr, sql3, header4, header5)
+
+file.close()
