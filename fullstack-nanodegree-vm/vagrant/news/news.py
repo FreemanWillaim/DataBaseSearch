@@ -89,4 +89,6 @@ result = searchData(curr, sql3, header4, header5)
 
 file.close()
 
+# Closes the database connection.
+
 conn.close()
