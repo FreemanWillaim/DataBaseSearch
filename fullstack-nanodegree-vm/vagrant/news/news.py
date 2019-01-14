@@ -85,4 +85,6 @@ file = fileOpen()
 
 result = searchData(curr, sql3, header4, header5)
 
+# Closes the file connection.
+
 file.close()
