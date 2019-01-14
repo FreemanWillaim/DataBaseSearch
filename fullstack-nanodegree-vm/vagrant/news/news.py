@@ -83,4 +83,4 @@ file = fileOpen()
 # statement,  sql6, and two headers, header4 and header5. Then
 # recieves the result of the query.
 
-searchData(curr, sql3, header4, header5)
+result = searchData(curr, sql3, header4, header5)
