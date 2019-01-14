@@ -30,3 +30,9 @@ order by count desc limit 3'
 sql2 = 'select au.name, count(*) from log join articles\
  a on substring(path,10)=slug join authors au on au.id \
  = a.author group by name order by count desc'
+ 
+ sql3 = 'select date(time) as date ,round(((SUM(CASE WHEN log.status=\
+\'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count(date(time)))::numeric)\
+*100),2)as a from log group by date having round(((SUM(CASE WHEN \
+log.status=\'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count\
+(date(time)))::numeric)*100),2) > 1;'
