@@ -30,6 +30,12 @@ order by count desc limit 3'
 sql2 = 'select au.name, count(*) from log join articles\
  a on substring(path,10)=slug join authors au on au.id \
  = a.author group by name order by count desc'
+
+# Sql query's that selects the date from the log database. It then
+# uses a case statement to count the numbeer of times a query recieved a 404
+# error, and divides this by the total number of queries for each day.
+# The query then multiplies the reult by 100 to show the percentage of errors
+# for each day and rounds the reuslt to two decimal places.
  
  sql3 = 'select date(time) as date ,round(((SUM(CASE WHEN log.status=\
 \'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count(date(time)))::numeric)\
