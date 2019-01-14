@@ -67,3 +67,5 @@ results = searchData(curr, sql1, header1, header2)
 # Then this object is stored in the variable conn.
 
 file = fileOpen()
+
+searchData(curr, sql2, header3, header2)
