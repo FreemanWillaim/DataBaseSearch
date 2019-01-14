@@ -48,5 +48,7 @@ log.status=\'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count\
 
 file = fileOpen()
 
+# Calls the method connect to create a connection to the news database.
+# Then this object is stored in the variable conn.
 
 conn = connect()
