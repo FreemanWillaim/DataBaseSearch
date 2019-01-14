@@ -68,4 +68,4 @@ results = searchData(curr, sql1, header1, header2)
 
 file = fileOpen()
 
-searchData(curr, sql2, header3, header2)
+results = searchData(curr, sql2, header3, header2)
