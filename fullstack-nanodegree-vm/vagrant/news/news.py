@@ -74,4 +74,7 @@ file = fileOpen()
 
 results = searchData(curr, sql2, header3, header2)
 
+# Calls the method connect to create a connection to the news database.
+# Then this object is stored in the variable conn.
+
 file = fileOpen()
