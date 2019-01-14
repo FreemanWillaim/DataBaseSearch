@@ -52,3 +52,5 @@ file = fileOpen()
 # Then this object is stored in the variable conn.
 
 conn = connect()
+
+curr = conn.cursor()
