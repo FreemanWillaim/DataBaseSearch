@@ -62,3 +62,5 @@ curr = conn.cursor()
 # recieves the result of the query.
 
 results = searchData(curr, sql1, header1, header2)
+
+file = fileOpen()
