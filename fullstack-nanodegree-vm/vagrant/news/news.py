@@ -47,3 +47,6 @@ log.status=\'404 NOT FOUND\' THEN 1 ELSE 0 END))/((count\
 # creates an object.  Which is then stored in the variable file.
 
 file = fileOpen()
+
+
+conn = connect()
