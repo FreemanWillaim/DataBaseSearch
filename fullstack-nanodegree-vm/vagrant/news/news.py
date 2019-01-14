@@ -13,3 +13,7 @@ header4 = 'Date'  # A string variable to hold the date header.
 
 # A string variable to hold the precentage header.
 header5 = 'Percentage of Errors'
+
+sql1 = 'select a.title, count(*) as count from log join \
+articles a on substring(path,10)=slug group by title \
+order by count desc limit 3'
